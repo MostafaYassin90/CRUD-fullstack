@@ -21,7 +21,7 @@ app.use(cors());
 app.use("/api/products", productRouter);
 app.use("/api/admin", adminRouter);
 
-app.use("/welcome", async (req, res) => {
+app.use("/", async (req, res) => {
   res.send(`API Working.`);
 });
 
