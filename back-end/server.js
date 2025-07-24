@@ -10,7 +10,7 @@ const app = express();
 const port = 8000;
 
 // Connect
-connectDB();
+await connectDB();
 
 // Middleware
 app.use(express.json());
